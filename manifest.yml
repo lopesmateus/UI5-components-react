@@ -1,0 +1,8 @@
+---
+applications:
+- name: my-app
+  path: build/
+  instances: 1
+  random-route: true
+  buildpack: staticfile_buildpack
+  memory: 256M 

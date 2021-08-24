@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AnalyticalTable,
   Card,
@@ -23,6 +23,8 @@ import "@ui5/webcomponents-icons/dist/line-chart.js";
 import "@ui5/webcomponents-icons/dist/horizontal-bar-chart.js";
 import "@ui5/webcomponents-icons/dist/list.js";
 import "@ui5/webcomponents-icons/dist/table-view.js";
+
+import api from "./api/api";
 
 
 
@@ -88,6 +90,18 @@ const tableColumns = [
 ];
 
 export function Home() {
+  const [stock, setStock] = useState([]);
+
+  useEffect(() => {
+    api.get("/backend/userservice/chart").then(({data}) => {
+      setStock(data);
+    })
+    console.log(stock);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+
   const history = useHistory();
   const handleProgressHeaderClick = () => {
       history.push("/detail");

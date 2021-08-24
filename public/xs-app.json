@@ -1,0 +1,16 @@
+{
+  "welcomeFile": "/index.html",
+  "authenticationMethod": "route",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "authenticationType": "none",
+      "csrfProtection": false,
+      "source": "^/curriculum-page-srv/(.*)$",
+      "destination": "curriculum-page-srv",
+      "target": "$1"
+    }
+  ]
+}

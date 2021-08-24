@@ -1,0 +1,37 @@
+{
+"destinations": [{"name":"curriculum-page-srv","url":"https://curriculum-page-srv.dest", "forwardAuthToken": true, "strictSSL": false}],
+"VCAP_SERVICES": {
+		"destination": [
+			{
+				"label": "destination",
+				"provider": null,
+				"plan": "lite",
+				"name": "Destination-react",
+				"tags": [
+					"destination",
+					"conn",
+					"connsvc"
+				],
+				"instance_guid": "9297b1cb-a8a0-4a56-9ac2-2f22d35ff124",
+				"instance_name": "Destination-react",
+				"binding_guid": "34614a9a-78e8-444d-9dd3-f877434416be",
+				"binding_name": null,
+				"credentials": {
+					"uaadomain": "authentication.us10.hana.ondemand.com",
+					"tenantmode": "dedicated",
+					"clientid": "sb-clone9297b1cba8a04a569ac22f22d35ff124!b33267|destination-xsappname!b62",
+					"instanceid": "9297b1cb-a8a0-4a56-9ac2-2f22d35ff124",
+					"verificationkey": "-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn3Pn0Y2MVkBYtm1RUADKAvTG6QxUO86OIT7UFUUItsMpjELN1z/FaDuUJ3UpFcnMO6SesAcnO+2eGvHzfhgk6+4S9MeSkINLN4W+/2GvTsPQBD0XGx9/hR+Opb0e0/01BFtAXJ67ewllo8xoNaDqNTS80QlwIB7L7M0YsDaf1GhRbNY5cvQdD9pUUVr0g8Xj/HL8ttb4MgJsHFHxYZW4kQn6Sq3+HYbilFDnis2Z26VwZHw2ff/jroV7gYAHMgnqESGx7WY7xQsgT33kXFPvOnWFA3WXelbE7Vh5P6y4ZNXHYv7iweMCWTcFRvv/hOR4JWZlwXSF4NYwjn74L2JQ7wIDAQAB-----END PUBLIC KEY-----",
+					"xsappname": "clone9297b1cba8a04a569ac22f22d35ff124!b33267|destination-xsappname!b62",
+					"identityzone": "30813e48trial",
+					"clientsecret": "34614a9a-78e8-444d-9dd3-f877434416be$VnxGlbL9f72dkzGdMi_eOFFCjoymqoQsQLFzKuA1yIQ=",
+					"tenantid": "421e4e24-7349-415c-985f-52fae4cc9615",
+					"uri": "https://destination-configuration.cfapps.us10.hana.ondemand.com",
+					"url": "https://30813e48trial.authentication.us10.hana.ondemand.com"
+				},
+				"syslog_drain_url": null,
+				"volume_mounts": []
+			}
+		]
+	}
+}
